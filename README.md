@@ -1,37 +1,40 @@
 # KNCalc
 
-A simple forces related to a climbing fall calculator.
+## A simple forces calculator to understand climbing fall.
 
-KnCalc is a minimum viable project of an educational tool for understanding forces and fall factors in climbing.
+### KnCalc is a ***minimum viable project*** of an educational tool for understanding forces and fall factors in climbing.
 It can be use with childrens or adults to demonstrate and play with differents variables such as the climber weight, the height of fall, the rope stretch rate, and others.
 
 This app aims to be less visually numbers oriented, and more graphics usable to vary variables and understand their inner relations.
 
-!! Dislcaimer : This app calculate theorical values, despite the fact that a lot of physical elements are related to real and subjectives context, we try
-here to approach as close a possible a real value. But it can't be used to plan a real fall, it is for education purpose only.
+***!! Disclaimer : This app calculate theorical values, despite the fact that a lot of physical elements are related to real and subjectives context, we try
+here to approach as close a possible a real value. But it can't be used to plan a real fall, it is for education purpose only.***
+
+![Launch screen](https://zupimages.net/up/22/47/vcen.png)
+![App screen](https://zupimages.net/up/22/47/77vr.png)
 
 If you want to participate and commit to this project feel free to email me at : jo@jolanberard.com
 
 
-Formulas used :
+FORMULAS USED :
 
-Earth acceleration = 9.80665
+- Earth acceleration = 9.80665
 
-Static force (in Kn) = body weight(Kg) * earth acceleration
+- Static force (in Kn) = body weight(Kg) * earth acceleration
 
-Rope stretch distance (in m) = rope stretch value(%) * (rope height from ground(m) + height above last quickdraw(m) + slack(m))/100
+- Rope stretch distance (in m) = rope stretch value(%) * (rope height from ground(m) + height above last quickdraw(m) + slack(m))/100
 
-Distance of slow (in m) = belayer dynamic catch(m) + rope stretch distance(m)
+- Distance of slow (in m) = belayer dynamic catch(m) + rope stretch distance(m)
 
-Falling distance (in m) = (height above last quickdraw * 2) + rope stretch value(%) * ((height above last quickdraw(m)*2)/100) + slack(m)
+- Falling distance (in m) = (height above last quickdraw * 2) + rope stretch value(%) * ((height above last quickdraw(m)*2)/100) + slack(m)
 
-Force on fall(in N) = static force(Kn) * (falling distance(m)/distance of slow(m))
+- Force on fall(in N) = static force(Kn) * (falling distance(m)/distance of slow(m))
 
-Force on fall(in Kn) = (static force(Kn) * (falling distance/distance of slow(m)))/1000
+- Force on fall(in Kn) = (static force(Kn) * (falling distance/distance of slow(m)))/1000
 
-Fall factor = falling distance(m) / rope height from ground(m)
+- Fall factor = falling distance(m) / rope height from ground(m)
 
-Pulley tension = force on fall in Kn * 1.60
+- Pulley tension = force on fall in Kn * 1.60
 
 References :
 
